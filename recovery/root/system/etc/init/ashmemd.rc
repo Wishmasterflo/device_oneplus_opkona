@@ -1,0 +1,9 @@
+on boot
+    start ashmemd
+
+service ashmemd /system/bin/ashmemd
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:recovery:s0

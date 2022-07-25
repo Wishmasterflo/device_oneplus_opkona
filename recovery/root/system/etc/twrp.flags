@@ -1,0 +1,19 @@
+# mount point    	fstype     	device                 device2                      flags
+/recovery			emmc		/dev/block/bootdevice/by-name/recovery				flags=slotselect;display="Recovery";backup=1;flashimg=1
+/boot				emmc		/dev/block/bootdevice/by-name/boot					flags=slotselect;display="Boot";backup=1;flashimg=1
+/data               f2fs        /dev/block/bootdevice/by-name/userdata              flags=fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0,metadata_encryption=aes-256-xts:wrappedkey_v0,keydirectory=/metadata/vold/metadata_encryption
+/persist			ext4		/dev/block/bootdevice/by-name/persist 				flags=display="Persist";fsflags=ro
+/persist_image		emmc		/dev/block/bootdevice/by-name/persist 				flags=display="Persist";backup=1
+/firmware           vfat        /dev/block/bootdevice/by-name/modem                 flags=display="Firmware"
+/misc               emmc        /dev/block/bootdevice/by-name/misc
+/modem				emmc		/dev/block/bootdevice/by-name/modem					flags=slotselect;backup=1;display="Modem"
+/bluetooth			emmc		/dev/block/bootdevice/by-name/bluetooth				flags=slotselect;backup=1;subpartitionof=/modem
+/dsp				emmc		/dev/block/bootdevice/by-name/dsp					flags=slotselect;backup=1;subpartitionof=/modem
+/dtbo				emmc		/dev/block/bootdevice/by-name/dtbo					flags=slotselect;display="DTBO";backup=1;flashimg=1
+/vbmeta				emmc		/dev/block/bootdevice/by-name/vbmeta				flags=slotselect;display="VBMeta";backup=1;flashimg=1
+/efs1            	emmc       	/dev/block/bootdevice/by-name/modemst1              flags=backup=1;display=EFS
+/efs2            	emmc       	/dev/block/bootdevice/by-name/modemst2              flags=backup=1;subpartitionof=/efs1
+/efsc				emmc		/dev/block/bootdevice/by-name/fsc					flags=backup=1;subpartitionof=/efs1
+/efsg				emmc		/dev/block/bootdevice/by-name/fsg					flags=backup=1;subpartitionof=/efs1
+#/keymaster       	emmc       	/dev/block/bootdevice/by-name/keymaster             flags=slotselect
+/usbstorage      	vfat    	/dev/block/sdg1        /dev/block/sdg     			flags=fsflags=utf8;display="USB OTG";storage;wipeingui;removable

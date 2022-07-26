@@ -58,7 +58,7 @@ To test it:
 # To temporarily boot it
 fastboot boot out/target/product/lemonades/recovery.img 
 
-# Since 8T has a separate recovery partition, you can flash the recovery with
+# Since 9R has a separate recovery partition, you can flash the recovery with
 fastboot flash recovery recovery.img
 ```
 
@@ -66,7 +66,7 @@ Kernel: https://github.com/LineageOS/android_kernel_oneplus_sm8250
 
 ##### Credits
 - The-Incognito For Recovery Trees of Oneplus 8T
-- YumeMichi For Implementing Erofs
+- YumeMichi For Implementing Erofs and Other Misc
 - bigbiff for decryption
 - Systemad for original tree
 - CaptainThrowback for original tree

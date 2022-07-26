@@ -156,8 +156,7 @@ TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
 BOARD_USES_METADATA_PARTITION := true
 BOARD_USES_QCOM_FBE_DECRYPTION := true
-PRODUCT_ENFORCE_VINTF_MANIFEST := true
-PRODUCT_FULL_TREBLE := true
+#PRODUCT_FULL_TREBLE := true
 
 # Extras
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
@@ -186,7 +185,7 @@ TW_EXCLUDE_APEX := true
 TW_NO_BIND_SYSTEM := true
 TW_NO_EXFAT_FUSE := true
 TW_SYSTEM_BUILD_PROP_ADDITIONAL_PATHS := build.prop
-TW_OVERRIDE_SYSTEM_PROPS := "ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental;ro.build.version.ota"
+TW_OVERRIDE_SYSTEM_PROPS := "ro.build.fingerprint=ro.system.build.fingerprint"
 TW_RECOVERY_ADDITIONAL_RELINK_BINARY_FILES += \
     $(TARGET_OUT_EXECUTABLES)/ashmemd \
     $(TARGET_OUT_EXECUTABLES)/strace

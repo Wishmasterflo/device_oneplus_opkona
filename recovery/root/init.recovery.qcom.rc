@@ -64,6 +64,7 @@ on init
     mkdir /dev/fscklogs 0770 root system
 
 on boot
+    setprop sys.usb.config adb
     #chmod 0777 /system/bin/mount-dynamic-rw.sh
     #start mount-dynamic-rw
     chmod 0777 /system/bin/unified-script.sh

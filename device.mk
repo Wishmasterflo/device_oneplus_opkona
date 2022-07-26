@@ -8,7 +8,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit from virtual AB OTA config
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
-LOCAL_PATH := device/oneplus/kebab
+LOCAL_PATH := device/oneplus/lemonades
 
 # define hardware platform
 PRODUCT_PLATFORM := kona
@@ -67,11 +67,11 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service \
-    android.hardware.boot@1.0-impl-wrapper.recovery \
-    android.hardware.boot@1.0-impl-wrapper \
-    android.hardware.boot@1.0-impl.recovery \
+    android.hardware.boot@1.1-impl \
+    android.hardware.boot@1.1-service \
+    android.hardware.boot@1.1-impl-wrapper.recovery \
+    android.hardware.boot@1.1-impl-wrapper \
+    android.hardware.boot@1.1-impl.recovery \
     bootctrl.$(PRODUCT_PLATFORM) \
     bootctrl.$(PRODUCT_PLATFORM).recovery \
 
@@ -109,10 +109,6 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
 # tzdata
 PRODUCT_PACKAGES_ENG += \
     tzdata_twrp
-
-# Apex libraries
-#PRODUCT_COPY_FILES += \
-#    $(OUT_DIR)/target/product/$(PRODUCT_RELEASE_NAME)/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so
 
 #TWRP
 PRODUCT_COPY_FILES += \

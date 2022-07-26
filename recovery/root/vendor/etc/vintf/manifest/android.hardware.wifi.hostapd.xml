@@ -1,0 +1,22 @@
+<manifest version="1.0" type="device">
+    <hal format="hidl">
+        <name>android.hardware.wifi.hostapd</name>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>IHostapd</name>
+            <instance>default</instance>
+            <instance>wigighostapd</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.wifi.hostapd</name>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>IHostapdVendor</name>
+            <instance>default</instance>
+            <instance>wigighostapd</instance>
+        </interface>
+    </hal>
+</manifest>

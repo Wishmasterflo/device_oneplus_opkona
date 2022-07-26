@@ -35,7 +35,7 @@ and then paste the following
     <linkfile src="tools" dest="build/tools"/>
   </project>
 
-  <project path="device/oneplus/kebab" name="ApexLegend007/twrp_device_oneplus_lemonades" remote="github" revision="android-12.1" />
+  <project path="device/oneplus/kebab" name="ApexLegend007/twrp_device_oneplus_lemonades" remote="github" revision="android-12.1-new" />
 </manifest>
 ```
 You might need to pick few patches from gerrit.twrp.me to get some stuff working.
@@ -64,7 +64,7 @@ fastboot flash recovery recovery.img
 
 Kernel: https://github.com/LineageOS/android_kernel_oneplus_sm8250
 
-##### Credits
+##### Credits #####
 - The-Incognito For Recovery Trees of Oneplus 8T
 - YumeMichi For Implementing Erofs and Other Misc
 - bigbiff for decryption

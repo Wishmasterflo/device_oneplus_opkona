@@ -5,7 +5,7 @@
         matrix_kernel_config_q_4.14.xml
         matrix_kernel_config_q_4.19.xml
 -->
-<compatibility-matrix version="4.0" type="framework" level="4">
+<compatibility-matrix version="2.0" type="framework" level="4">
     <hal format="hidl" optional="true">
         <name>android.hardware.atrace</name>
         <version>1.0</version>
@@ -252,7 +252,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl" optional="false">
         <name>android.hardware.keymaster</name>
         <version>3.0</version>
         <version>4.0</version>
@@ -2455,44 +2455,16 @@
             <value type="tristate">y</value>
         </config>
         <config>
+            <key>CONFIG_CPU_SW_DOMAIN_PAN</key>
+            <value type="tristate">y</value>
+        </config>
+        <config>
             <key>CONFIG_DEVKMEM</key>
             <value type="tristate">n</value>
         </config>
         <config>
             <key>CONFIG_OABI_COMPAT</key>
             <value type="tristate">n</value>
-        </config>
-    </kernel>
-    <kernel version="4.14.105" level="4">
-        <conditions>
-            <config>
-                <key>CONFIG_ARM</key>
-                <value type="tristate">y</value>
-            </config>
-            <config>
-                <key>CONFIG_CPU_TTBR0_PAN</key>
-                <value type="tristate">n</value>
-            </config>
-        </conditions>
-        <config>
-            <key>CONFIG_CPU_SW_DOMAIN_PAN</key>
-            <value type="tristate">y</value>
-        </config>
-    </kernel>
-    <kernel version="4.14.105" level="4">
-        <conditions>
-            <config>
-                <key>CONFIG_ARM</key>
-                <value type="tristate">y</value>
-            </config>
-            <config>
-                <key>CONFIG_CPU_SW_DOMAIN_PAN</key>
-                <value type="tristate">n</value>
-            </config>
-        </conditions>
-        <config>
-            <key>CONFIG_CPU_TTBR0_PAN</key>
-            <value type="tristate">y</value>
         </config>
     </kernel>
     <kernel version="4.14.105" level="4">

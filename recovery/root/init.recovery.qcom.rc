@@ -33,6 +33,12 @@ service mount-dynamic-rw /system/bin/mount-dynamic-rw.sh
     disabled
     oneshot
     seclabel u:r:recovery:s0
+	
+service hal_cryptoeng_oplus /system/bin/hw/vendor.oplus.hardware.cryptoeng@1.0-service
+    class late_start
+    user system
+    group system input sdcard_rw sdcard_r
+    seclabel u:r:recovery:s0
 
 service unified-script /system/bin/unified-script.sh
     user root

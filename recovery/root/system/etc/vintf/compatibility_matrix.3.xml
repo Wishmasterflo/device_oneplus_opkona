@@ -5,7 +5,7 @@
         matrix_kernel_config_p_4.9.xml
         matrix_kernel_config_p_4.14.xml
 -->
-<compatibility-matrix version="4.0" type="framework" level="3">
+<compatibility-matrix version="2.0" type="framework" level="3">
     <hal format="hidl" optional="false">
         <name>android.hardware.audio</name>
         <version>4.0</version>
@@ -230,7 +230,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl" optional="false">
         <name>android.hardware.keymaster</name>
         <version>3.0</version>
         <version>4.0</version>
@@ -316,10 +316,6 @@
             <instance>slot2</instance>
             <instance>slot3</instance>
         </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hardware.radio</name>
-        <version>1.0-2</version>
         <interface>
             <name>ISap</name>
             <instance>slot1</instance>

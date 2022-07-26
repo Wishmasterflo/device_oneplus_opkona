@@ -2,7 +2,7 @@
     <hal>
         <name>android.hardware.media.c2</name>
         <transport>hwbinder</transport>
-        <version>1.2</version>
+        <version>1.1</version>
         <interface>
             <name>IComponentStore</name>
             <instance>software</instance>

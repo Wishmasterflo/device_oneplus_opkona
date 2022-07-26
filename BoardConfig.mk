@@ -29,15 +29,17 @@ DEVICE_PATH := device/oneplus/lemonades
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
 TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_ABI2 :=
-TARGET_CPU_VARIANT := cortex-a75
+TARGET_CPU_ABI2 := 
+TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT_RUNTIME := cortex-a75
 
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-2a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := cortex-a75
-TARGET_SUPPORTS_64_BIT_APPS := false
+TARGET_2ND_CPU_VARIANT := generic
+TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a75
+TARGET_SUPPORTS_64_BIT_APPS := true
 
 ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
@@ -56,7 +58,6 @@ BOARD_KERNEL_CMDLINE := \
     androidboot.selinux=permissive \
     lpm_levels.sleep_disabled=1 \
     msm_rtb.filter=0x237 \
-    firmware_class.path=/vendor/firmware_mnt/image \
     service_locator.enable=1 \
     swiotlb=2048 \
     video=vfb:640x400,bpp=32,memsize=3072000
@@ -72,8 +73,8 @@ BOARD_RAMDISK_OFFSET       := 0x01000000
 BOARD_DTB_OFFSET           := 0x01f00000
 TARGET_KERNEL_ARCH := arm64
 TARGET_NO_KERNEL := false
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/Image.img-dtb
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.img-kernel
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --base $(BOARD_KERNEL_BASE)
@@ -114,7 +115,7 @@ BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 7516192768
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     system \
-		system_ext \
+    system_ext \
     vendor \
     product \
     odm
@@ -169,7 +170,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
 TW_THEME := portrait_hdpi
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
-TW_DEFAULT_BRIGHTNESS := 420
+TW_DEFAULT_BRIGHTNESS := 1200
 TW_Y_OFFSET := 104
 TW_H_OFFSET := -104
 TW_EXCLUDE_DEFAULT_USB_INIT := true
@@ -178,12 +179,13 @@ TW_EXCLUDE_TWRPAPP := true
 TW_EXTRA_LANGUAGES := true
 TW_HAS_EDL_MODE := true
 TW_INCLUDE_NTFS_3G := true
+TW_INCLUDE_EROFS := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_NO_SCREEN_BLANK := true
 TW_EXCLUDE_APEX := true
 TW_NO_BIND_SYSTEM := true
 TW_NO_EXFAT_FUSE := true
-TW_SYSTEM_BUILD_PROP_ADDITIONAL_PATHS := etc/buildinfo/oem_build.prop
+TW_SYSTEM_BUILD_PROP_ADDITIONAL_PATHS := build.prop
 TW_OVERRIDE_SYSTEM_PROPS := "ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental;ro.build.version.ota"
 TW_RECOVERY_ADDITIONAL_RELINK_BINARY_FILES += \
     $(TARGET_OUT_EXECUTABLES)/ashmemd \
@@ -197,6 +199,8 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libpcrecpp.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so
 
+#TWRP TESTING GERRIT STUFF 60 FPS TWRP
+TW_FRAMERATE := 60
 
 # TWRP Debug Flags
 TARGET_USES_LOGD := true
@@ -206,3 +210,6 @@ TARGET_RECOVERY_DEVICE_MODULES += debuggerd
 TW_RECOVERY_ADDITIONAL_RELINK_FILES += $(TARGET_OUT_EXECUTABLES)/debuggerd
 BOARD_RAMDISK_USE_LZMA := true
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+
+#Obsoleted Board Command Kernel Line in case of oplus based twrp
+#firmware_class.path=/vendor/firmware_mnt/image \

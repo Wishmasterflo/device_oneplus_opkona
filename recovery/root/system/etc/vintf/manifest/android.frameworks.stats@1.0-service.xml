@@ -1,5 +1,5 @@
 <manifest version="1.0" type="framework">
-    <hal max-level="5">
+    <hal>
         <name>android.frameworks.stats</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -7,11 +7,5 @@
             <name>IStats</name>
             <instance>default</instance>
         </interface>
-    </hal>
-
-    <hal format="aidl">
-        <name>android.frameworks.stats</name>
-        <version>1</version>
-        <fqname>IStats/default</fqname>
     </hal>
 </manifest>

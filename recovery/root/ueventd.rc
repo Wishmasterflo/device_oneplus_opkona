@@ -1,4 +1,11 @@
-firmware_directories /etc/firmware/ /odm/firmware/ /vendor/firmware/ /firmware/image/
+# ifndef OPLUS_FEATURE_WIFI_BDF
+# Laixin@CONNECTIVITY.WIFI.BASE.HARDWARE.1065227 , 2019/10/17
+# Modify for: multi projects using different bdf, adding persist into firmware_directories
+#firmware_directories /etc/firmware/ /odm/firmware/ /vendor/firmware/ /firmware/image/
+# else /* OPLUS_FEATURE_WIFI_BDF */
+firmware_directories /etc/firmware/ /odm/firmware/ /mnt/vendor/persist/copy/ /mnt/vendor/persist/ /odm/etc/wifi/ /vendor/firmware/ /firmware/image/
+#endif /* OPLUS_FEATURE_WIFI_BDF */
+
 uevent_socket_rcvbuf_size 16M
 
 subsystem graphics
@@ -59,6 +66,11 @@ subsystem sound
 
 # CDMA radio interface MUX
 /dev/ppp                  0660   radio      vpn
+
+#ifdef OPLUS_FEATURE_STORAGE_TOOL
+#Xuweijie1@BSP.Storage , 20200601. add for Memory Monitor
+/dev/sg3         0600   system     system
+#endif /* OPLUS_FEATURE_STORAGE_TOOL */
 
 # sysfs properties
 /sys/devices/platform/trusty.*      trusty_version        0440  root   log

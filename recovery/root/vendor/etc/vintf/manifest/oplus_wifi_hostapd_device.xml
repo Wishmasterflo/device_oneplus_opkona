@@ -1,0 +1,12 @@
+<manifest version="1.0" type="device">
+    <hal format="hidl">
+        <name>vendor.oplus.hardware.wifi.hostapd</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IOplusHostapd</name>
+            <instance>default</instance>
+            <instance>wigighostapd</instance>
+        </interface>
+    </hal>
+</manifest>

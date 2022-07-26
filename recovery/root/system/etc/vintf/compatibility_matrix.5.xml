@@ -5,7 +5,7 @@
         matrix_kernel_config_r_4.19.xml
         matrix_kernel_config_r_5.4.xml
 -->
-<compatibility-matrix version="4.0" type="framework" level="5">
+<compatibility-matrix version="2.0" type="framework" level="5">
     <hal format="hidl" optional="true">
         <name>android.hardware.atrace</name>
         <version>1.0</version>
@@ -93,7 +93,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.biometrics.face</name>
-        <version>1.0</version>
+        <version>1.0-1</version>
         <interface>
             <name>IBiometricsFace</name>
             <instance>default</instance>
@@ -261,7 +261,6 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.identity</name>
-        <version>1-2</version>
         <interface>
             <name>IIdentityCredentialStore</name>
             <instance>default</instance>
@@ -283,7 +282,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl" optional="false">
         <name>android.hardware.keymaster</name>
         <version>3.0</version>
         <version>4.0-1</version>
@@ -1676,6 +1675,18 @@
     <kernel version="4.14.180" level="5">
         <conditions>
             <config>
+                <key>CONFIG_IKHEADERS</key>
+                <value type="tristate">n</value>
+            </config>
+        </conditions>
+        <config>
+            <key>DISALLOW_CONFIG_IKHEADERS_IS_N</key>
+            <value type="tristate">y</value>
+        </config>
+    </kernel>
+    <kernel version="4.14.180" level="5">
+        <conditions>
+            <config>
                 <key>CONFIG_EXT4_FS</key>
                 <value type="tristate">y</value>
             </config>
@@ -2822,6 +2833,18 @@
     <kernel version="4.19.110" level="5">
         <conditions>
             <config>
+                <key>CONFIG_IKHEADERS</key>
+                <value type="tristate">n</value>
+            </config>
+        </conditions>
+        <config>
+            <key>DISALLOW_CONFIG_IKHEADERS_IS_N</key>
+            <value type="tristate">y</value>
+        </config>
+    </kernel>
+    <kernel version="4.19.110" level="5">
+        <conditions>
+            <config>
                 <key>CONFIG_EXT4_FS</key>
                 <value type="tristate">y</value>
             </config>
@@ -2843,7 +2866,7 @@
             <value type="tristate">y</value>
         </config>
     </kernel>
-    <kernel version="5.4.61" level="5">
+    <kernel version="5.4.42" level="5">
         <config>
             <key>CONFIG_ADVISE_SYSCALLS</key>
             <value type="tristate">y</value>
@@ -3849,7 +3872,7 @@
             <value type="tristate">n</value>
         </config>
     </kernel>
-    <kernel version="5.4.61" level="5">
+    <kernel version="5.4.42" level="5">
         <conditions>
             <config>
                 <key>CONFIG_ARM</key>
@@ -3873,7 +3896,7 @@
             <value type="tristate">n</value>
         </config>
     </kernel>
-    <kernel version="5.4.61" level="5">
+    <kernel version="5.4.42" level="5">
         <conditions>
             <config>
                 <key>CONFIG_ARM64</key>
@@ -3917,7 +3940,7 @@
             <value type="tristate">y</value>
         </config>
     </kernel>
-    <kernel version="5.4.61" level="5">
+    <kernel version="5.4.42" level="5">
         <conditions>
             <config>
                 <key>CONFIG_X86</key>
@@ -3941,7 +3964,7 @@
             <value type="tristate">y</value>
         </config>
     </kernel>
-    <kernel version="5.4.61" level="5">
+    <kernel version="5.4.42" level="5">
         <conditions>
             <config>
                 <key>CONFIG_ACPI</key>
@@ -3953,7 +3976,7 @@
             <value type="tristate">y</value>
         </config>
     </kernel>
-    <kernel version="5.4.61" level="5">
+    <kernel version="5.4.42" level="5">
         <conditions>
             <config>
                 <key>CONFIG_OF</key>
@@ -3965,7 +3988,19 @@
             <value type="tristate">y</value>
         </config>
     </kernel>
-    <kernel version="5.4.61" level="5">
+    <kernel version="5.4.42" level="5">
+        <conditions>
+            <config>
+                <key>CONFIG_IKHEADERS</key>
+                <value type="tristate">n</value>
+            </config>
+        </conditions>
+        <config>
+            <key>DISALLOW_CONFIG_IKHEADERS_IS_N</key>
+            <value type="tristate">y</value>
+        </config>
+    </kernel>
+    <kernel version="5.4.42" level="5">
         <conditions>
             <config>
                 <key>CONFIG_EXT4_FS</key>
@@ -3977,7 +4012,7 @@
             <value type="tristate">y</value>
         </config>
     </kernel>
-    <kernel version="5.4.61" level="5">
+    <kernel version="5.4.42" level="5">
         <conditions>
             <config>
                 <key>CONFIG_F2FS_FS</key>

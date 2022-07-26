@@ -10,6 +10,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 LOCAL_PATH := device/oneplus/lemonades
 
+#SHIPPING API
+PRODUCT_SHIPPING_API_LEVEL := 30
+
+#VNDK API
+PRODUCT_TARGET_VNDK_VERSION := 31
+
 # define hardware platform
 PRODUCT_PLATFORM := kona
 

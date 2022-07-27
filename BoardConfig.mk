@@ -39,10 +39,15 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a75
-TARGET_SUPPORTS_64_BIT_APPS := true
 
 ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
+
+# 12.1 manifest requirements
+TARGET_SUPPORTS_64_BIT_APPS := true
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := kona
@@ -54,8 +59,8 @@ BOARD_KERNEL_CMDLINE := \
     androidboot.console=ttyMSM0 \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
-    androidboot.usbcontroller=a600000.dwc3 \
     androidboot.selinux=permissive \
+    androidboot.usbcontroller=a600000.dwc3 \
     lpm_levels.sleep_disabled=1 \
     msm_rtb.filter=0x237 \
     service_locator.enable=1 \
@@ -73,8 +78,8 @@ BOARD_RAMDISK_OFFSET       := 0x01000000
 BOARD_DTB_OFFSET           := 0x01f00000
 TARGET_KERNEL_ARCH := arm64
 TARGET_NO_KERNEL := false
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/Image.img-dtb
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.img-kernel
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --base $(BOARD_KERNEL_BASE)
@@ -94,7 +99,7 @@ TARGET_USES_HARDWARE_QCOM_BOOTCTRL := true
 QCOM_BOARD_PLATFORMS += kona
 
 # fstab
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
 
 # Partition Info
 BOARD_FLASH_BLOCK_SIZE := 262144
@@ -154,6 +159,7 @@ VENDOR_SECURITY_PATCH := 2099-12-31
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
+#TW_USE_FSCRYPT_POLICY := 0
 BOARD_USES_METADATA_PARTITION := true
 BOARD_USES_QCOM_FBE_DECRYPTION := true
 
@@ -161,6 +167,7 @@ BOARD_USES_QCOM_FBE_DECRYPTION := true
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := false
+PRODUCT_ENFORCE_VINTF_MANIFEST := true
 
 # TWRP specific build flags
 TARGET_RECOVERY_QCOM_RTC_FIX := true
@@ -177,14 +184,12 @@ TW_EXCLUDE_TWRPAPP := true
 TW_EXTRA_LANGUAGES := true
 TW_HAS_EDL_MODE := true
 TW_INCLUDE_NTFS_3G := true
-TW_INCLUDE_EROFS := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_NO_SCREEN_BLANK := true
-TW_EXCLUDE_APEX := true
 TW_NO_BIND_SYSTEM := true
 TW_NO_EXFAT_FUSE := true
 TW_SYSTEM_BUILD_PROP_ADDITIONAL_PATHS := build.prop
-TW_OVERRIDE_SYSTEM_PROPS := "ro.build.fingerprint=ro.system.build.fingerprint"
+TW_OVERRIDE_SYSTEM_PROPS := \
+    "ro.bootimage.build.date.utc=ro.build.date.utc;ro.build.date.utc;ro.odm.build.date.utc=ro.build.date.utc;ro.product.build.date.utc=ro.build.date.utc;ro.system.build.date.utc=ro.build.date.utc;ro.system_ext.build.date.utc=ro.build.date.utc;ro.vendor.build.date.utc=ro.build.date.utc;ro.build.product;ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental;ro.product.name=ro.product.system.name"
 TW_RECOVERY_ADDITIONAL_RELINK_BINARY_FILES += \
     $(TARGET_OUT_EXECUTABLES)/ashmemd \
     $(TARGET_OUT_EXECUTABLES)/strace
@@ -197,8 +202,6 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libpcrecpp.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so
 
-#TWRP TESTING GERRIT STUFF 60 FPS TWRP
-TW_FRAMERATE := 60
 
 # TWRP Debug Flags
 TARGET_USES_LOGD := true
@@ -207,7 +210,3 @@ TWRP_INCLUDE_LOGCAT := true
 TARGET_RECOVERY_DEVICE_MODULES += debuggerd
 TW_RECOVERY_ADDITIONAL_RELINK_FILES += $(TARGET_OUT_EXECUTABLES)/debuggerd
 BOARD_RAMDISK_USE_LZMA := true
-BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
-
-#Obsoleted Board Command Kernel Line in case of oplus based twrp
-#firmware_class.path=/vendor/firmware_mnt/image \

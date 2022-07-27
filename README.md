@@ -1,12 +1,12 @@
 ## OrangeFox Recovery Project Oneplus 8T/9R Changelog
 
-* 27-July-2022 OrangeFox R12.1 V2
+# 27-July-2022 OrangeFox R12.1 V2
  - This Version should be unified now to work on the Oneplus 8t and 9r
  - Updated with changes from new TWRP 3.6.2-12
  - Based on OOS12 now
  - fixed decryption of Data when on Android 12
 
-* 17-July-2022 OrangeFox R12.1 
+# 17-July-2022 OrangeFox R12.1 
  - Added support for Android 12 and synced with latest TWRP 12.1 sources
 
 
@@ -70,7 +70,7 @@ To test it:
 # To temporarily boot it
 fastboot boot out/target/product/lemonades/recovery.img 
 
-# Since 9R has a separate recovery partition, you can flash the recovery with
+# Since 8T/9R have a separate recovery partition, you can flash the recovery with
 fastboot flash recovery recovery.img
 ```
 
@@ -86,4 +86,3 @@ Kernel: https://github.com/LineageOS/android_kernel_oneplus_sm8250
 - TWRP team
 - OrangeFox team
 - Qnorsten for OOS fix
-

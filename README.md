@@ -1,4 +1,4 @@
-# Device Tree for 9R (lemonades) for TWRP
+# Device Tree for Oneplus 8T (kebab) for TWRP
 
 ## Setup repo tool
 Setup repo tool from here https://source.android.com/setup/develop#installing-repo

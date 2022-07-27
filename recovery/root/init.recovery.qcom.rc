@@ -26,13 +26,6 @@
 #
 
 import /init.recovery.qcom_decrypt.rc
-
-service mount-dynamic-rw /system/bin/mount-dynamic-rw.sh
-    user root
-    group root
-    disabled
-    oneshot
-    seclabel u:r:recovery:s0
 	
 service hal_cryptoeng_oplus /system/bin/hw/vendor.oplus.hardware.cryptoeng@1.0-service
     class late_start
@@ -65,8 +58,6 @@ on init
 
 on boot
     setprop sys.usb.config adb
-    #chmod 0777 /system/bin/mount-dynamic-rw.sh
-    #start mount-dynamic-rw
     chmod 0777 /system/bin/unified-script.sh
     start unified-script
     chmod 0777 /system/bin/make-fake-partitions-service.sh

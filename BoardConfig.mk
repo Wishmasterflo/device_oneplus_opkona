@@ -23,7 +23,7 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-DEVICE_PATH := device/oneplus/lemonades
+DEVICE_PATH := device/oneplus/OnePlus8T
 
 # Architecture
 TARGET_ARCH := arm64

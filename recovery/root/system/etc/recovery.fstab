@@ -4,19 +4,8 @@ system_ext                                              /system_ext            e
 product                                                 /product               ext4    ro,barrier=1,discard                                 wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
 vendor                                                  /vendor                ext4    ro,barrier=1,discard                                 wait,slotselect,avb,logical,first_stage_mountt
 odm                                                     /odm                   ext4    ro,barrier=1,discard                                 wait,slotselect,avb,logical,first_stage_mount
-my_product          	                                /my_product            ext4	   ro,barrier=1,discard	                                wait,slotselect,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey
-my_engineering                                          /my_engineering	       ext4	   ro,barrier=1,discard                                 wait,slotselect,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey
-my_company                                              /my_company		       ext4    ro,barrier=1,discard                                 wait,slotselect,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey
-my_carrier                                              /my_carrier		       ext4    ro,barrier=1,discard	                                wait,slotselect,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey
-my_region                                               /my_region	           ext4    ro,barrier=1,discard	                                wait,slotselect,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey
-my_heytap                                               /my_heytap	    	   ext4    ro,barrier=1,discard                                 wait,slotselect,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey
-my_stock                                                /my_stock 		       ext4    ro,barrier=1,discard                                 wait,slotselect,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey
-my_preload                                              /my_preload		       ext4    ro,barrier=1,discard                                 wait,slotselect,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey
-my_bigball                                              /my_bigball            ext4    ro,barrier=1,discard                                 wait,slotselect,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey
-my_manifest                                             /my_manifest	       ext4    ro,barrier=1,discard	                                wait,slotselect,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey
 /dev/block/by-name/metadata                             /metadata              ext4    noatime,nosuid,nodev,discard,sync                    wait,check,formattable,first_stage_mount
 /dev/block/bootdevice/by-name/userdata                  /data                  f2fs    noatime,nosuid,nodev,discard,reserve_root=32768,resgid=1065,fsync_mode=nobarrier,inlinecrypt   latemount,wait,check,formattable,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0,metadata_encryption=aes-256-xts:wrappedkey_v0,keydirectory=/metadata/vold/metadata_encryption,quota,reservedsize=512M,sysfs_path=/sys/devices/platform/soc/1d84000.ufshc,checkpoint=fs
 /dev/block/bootdevice/by-name/misc                      /misc                  emmc    defaults                                             defaults
-
 #ADDING OP2 MOUNT POINT IN CASE SOMEONE WANTS TO PULL OP2 FILES FROM OP2 PARTITION
 /dev/block/by-name/op2                                  /op2                   ext4    noatime,nosuid,nodev,barrier=1,data=ordered          wait,check,first_stage_mount,nofail

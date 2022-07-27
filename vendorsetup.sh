@@ -9,8 +9,8 @@ export FOX_BUILD_DEVICE="OnePlus8T"
 export ALLOW_MISSING_DEPENDENCIES=true
 export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER="1"
 export LC_ALL="C"
-export TARGET_DEVICE_ALT="kebab, Kebab, lemonkebab, OnePlus8t, OnePlus 8t"
-export OF_TARGET_DEVICES="kebab, Kebab, lemonkebab, OnePlus8t, OnePlus 8t"
+export TARGET_DEVICE_ALT="kebab, Kebab, lemonades, lemonkebab, OnePlus8t, OnePlus 8t"
+export OF_TARGET_DEVICES="kebab, Kebab, lemonades, lemonkebab, OnePlus8t, OnePlus 8t"
 
 # Use magisk boot for patching
 export OF_USE_MAGISKBOOT=1

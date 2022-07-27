@@ -1,4 +1,17 @@
-# Device Tree for Oneplus 8T (kebab) for TWRP
+## OrangeFox Recovery Project Oneplus 8t Changelog
+
+* 27-July-2022 OrangeFox R12.1 V2
+ - This Version should be unified now to work on the Oneplus 8t and 9r
+ - Updated with changes from new TWRP 3.6.2-12
+ - Based on OOS12 now
+ - fixed decryption of Data when on Android 12
+
+* 17-July-2022 OrangeFox R12.1 
+
+ - Added support for Android 12 and synced with latest TWRP 12.1 sources
+
+
+# Device Tree for Oneplus 8T (kebab) / 9R (lemonades) for TWRP
 
 ## Setup repo tool
 Setup repo tool from here https://source.android.com/setup/develop#installing-repo
@@ -72,4 +85,6 @@ Kernel: https://github.com/LineageOS/android_kernel_oneplus_sm8250
 - CaptainThrowback for original tree
 - mauronofrio for original tree
 - TWRP team
+- OrangeFox team
 - Qnorsten for OOS fix
+

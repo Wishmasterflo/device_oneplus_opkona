@@ -1,4 +1,4 @@
-## OrangeFox Recovery Project Oneplus 8t Changelog
+## OrangeFox Recovery Project Oneplus 8T/9R Changelog
 
 * 27-July-2022 OrangeFox R12.1 V2
  - This Version should be unified now to work on the Oneplus 8t and 9r
@@ -7,7 +7,6 @@
  - fixed decryption of Data when on Android 12
 
 * 17-July-2022 OrangeFox R12.1 
-
  - Added support for Android 12 and synced with latest TWRP 12.1 sources
 
 

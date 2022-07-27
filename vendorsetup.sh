@@ -1,6 +1,7 @@
 export TARGET_ARCH="arm64-v8a"
 
 # Some about us
+export FOX_VARIANT="A12"
 export FOX_VERSION="R12.1"
 export OF_MAINTAINER=Wishmasterflo
 
@@ -55,8 +56,8 @@ export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=0
 export FOX_BUGGED_AOSP_ARB_WORKAROUND="1601559499"
 
 # -- add settings for R12.1 --
-export FOX_ADVANCED_SECURITY=0
-export OF_QUICK_BACKUP_LIST="/boot;/data;/system_image;/vendor_image;"
+export FOX_ADVANCED_SECURITY=1
+export OF_QUICK_BACKUP_LIST="/boot;/data;/super;"
 
 # -- add settings for Android 12 --
 # export OF_FIX_DECRYPTION_ON_DATA_MEDIA="1"

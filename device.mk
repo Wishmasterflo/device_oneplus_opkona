@@ -89,19 +89,19 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     fastbootd \
     resetprop
-	
-# Hidl Service
-PRODUCT_ENFORCE_VINTF_MANIFEST := true
 
 # qcom decryption
 PRODUCT_PACKAGES_ENG += \
     qcom_decrypt \
     qcom_decrypt_fbe
 
+# Hidl Service
+PRODUCT_ENFORCE_VINTF_MANIFEST := true
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-	
+
 #Display	
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/commonsys-intf/display

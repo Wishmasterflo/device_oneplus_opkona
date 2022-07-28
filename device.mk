@@ -102,6 +102,9 @@ PRODUCT_ENFORCE_VINTF_MANIFEST := true
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# set refreshrate
+TW_FRAMERATE := 60
+
 #Display	
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/commonsys-intf/display

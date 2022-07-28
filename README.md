@@ -81,6 +81,7 @@ Kernel: https://github.com/LineageOS/android_kernel_oneplus_sm8250
 - The-Incognito for Recovery Trees of Oneplus 8T
 - YumeMichi For Implementing Erofs and Other Misc
 - bigbiff for decryption
+- Pranav Talmale for decryption
 - Systemad for original tree
 - CaptainThrowback for original tree
 - mauronofrio for original tree

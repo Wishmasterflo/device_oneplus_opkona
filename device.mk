@@ -27,12 +27,12 @@ AB_OTA_UPDATER := true
 # more partitions to this list for the bootloader and radio.
 AB_OTA_PARTITIONS += \
     boot \
-	dtbo \
+    dtbo \
     system \
     system_ext \
     vendor \
     vbmeta \
-	vbmeta_system
+    vbmeta_system
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
@@ -73,11 +73,11 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.1-impl \
-    android.hardware.boot@1.1-service \
-    android.hardware.boot@1.1-impl-wrapper.recovery \
-    android.hardware.boot@1.1-impl-wrapper \
-    android.hardware.boot@1.1-impl.recovery \
+    android.hardware.boot@1.2-impl \
+    android.hardware.boot@1.2-service \
+    android.hardware.boot@1.2-impl-wrapper.recovery \
+    android.hardware.boot@1.2-impl-wrapper \
+    android.hardware.boot@1.2-impl.recovery \
     bootctrl.$(PRODUCT_PLATFORM) \
     bootctrl.$(PRODUCT_PLATFORM).recovery \
 

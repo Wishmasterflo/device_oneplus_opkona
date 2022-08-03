@@ -1,5 +1,10 @@
 ## OrangeFox Recovery Project Oneplus 8T/9R Changelog
 
+# 03-Aug-2022 OrangeFox R12.1 V3
+ - Minor fixes and changes
+ - Updated OOS12 Kernel
+ - Merged latest TWRP 12.1 Changes
+
 # 27-July-2022 OrangeFox R12.1 V2
  - This Version should be unified now to work on the Oneplus 8t and 9r
  - Updated with changes from new TWRP 3.6.2-12

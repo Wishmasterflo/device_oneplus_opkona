@@ -2,7 +2,7 @@
 # automatically set device props for unified tree shared-hardware models/variants
 
 
-load_op8t()8T
+load_op8t()
 {
     resetprop "ro.build.product" "OnePlus8T"
     resetprop "ro.display.series" "OnePlus 8T"

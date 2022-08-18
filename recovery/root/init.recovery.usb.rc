@@ -33,6 +33,8 @@ on init
     mount configfs none /config
     mkdir /config/usb_gadget/g1 0770 shell shell
     write /config/usb_gadget/g1/bcdUSB 0x0200
+    write /sys/class/android_usb/android0/idVendor 0x18d1
+    write /sys/class/android_usb/android0/idProduct 0xd001
     write /config/usb_gadget/g1/idVendor 0x18d1
     write /config/usb_gadget/g1/idProduct 0xd001
     mkdir /config/usb_gadget/g1/strings/0x409 0770 shell shell
@@ -89,6 +91,8 @@ on property:sys.usb.config=mtp && property:sys.usb.configfs=1
     rm /config/usb_gadget/g1/configs/b.1/f3
     rm /config/usb_gadget/g1/configs/b.1/f4
     rm /config/usb_gadget/g1/configs/b.1/f5
+    write /sys/class/android_usb/android0/idVendor 0x2A70
+    write /sys/class/android_usb/android0/idProduct 0xF003
     write /config/usb_gadget/g1/idVendor 0x2A70
     write /config/usb_gadget/g1/idProduct 0XF003
     symlink /config/usb_gadget/g1/functions/mtp.gs0 /config/usb_gadget/g1/configs/b.1/f1
@@ -102,6 +106,8 @@ on property:sys.usb.ffs.ready=1 && property:sys.usb.config=mtp,adb && property:s
     rm /config/usb_gadget/g1/configs/b.1/f3
     rm /config/usb_gadget/g1/configs/b.1/f4
     rm /config/usb_gadget/g1/configs/b.1/f5
+    write /sys/class/android_usb/android0/idVendor 0x2A70
+    write /sys/class/android_usb/android0/idProduct 0x9012
     write /config/usb_gadget/g1/idVendor 0x2A70
     write /config/usb_gadget/g1/idProduct 0x9012
     symlink /config/usb_gadget/g1/functions/mtp.gs0 /config/usb_gadget/g1/configs/b.1/f1

@@ -1,5 +1,8 @@
 ## OrangeFox Recovery Project Oneplus 8T/9R Changelog
 
+# 18-Aug-2022 OrangeFox R12.1 V5
+ - fixed adb sideload
+
 # 15-Aug-2022 OrangeFox R12.1 V4
  - Updated with latest fox_12.1 changes
 

@@ -1,5 +1,13 @@
 ## OrangeFox Recovery Project Oneplus 8T/9R Changelog
 
+# 23-Aug-2022 OrangeFox R12.1 V6
+ - This Orangefox Version should only be flashed to recovery when on OOS12 Firmware!
+ - Synced with latest fox_12.1 changes
+ - Added decryption for Android 13
+ - Fixed OOS flashing from recovery
+ - removed lockscreen timeout
+ - lowered default screen brightness
+
 # 18-Aug-2022 OrangeFox R12.1 V5
  - fixed adb sideload
 

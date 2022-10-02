@@ -1,5 +1,10 @@
 ## OrangeFox Recovery Project Oneplus 8T/9R Changelog
 
+# 02-Oct-2022 OrangeFox R12.1 V10
+ - Synced with latest fox_12.1 changes
+ - Build a seperate Orangefox Version for ROMs with EROFS Filesystem
+
+
 # 25-Sep-2022 OrangeFox R12.1 V9
  - Synced with latest fox_12.1 changes
  - Updated to OOS12 c33 Kernel

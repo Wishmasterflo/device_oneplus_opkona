@@ -43,13 +43,13 @@ PRODUCT_PACKAGES += \
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
-    FILESYSTEM_TYPE_system=ext4 \
+    FILESYSTEM_TYPE_system=erofs \
     POSTINSTALL_OPTIONAL_system=true
     
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_vendor=true \
     POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
-    FILESYSTEM_TYPE_vendor=ext4 \
+    FILESYSTEM_TYPE_vendor=erofs \
     POSTINSTALL_OPTIONAL_vendor=true
     
 # Userdata Checkpointing OTA GC
@@ -83,6 +83,12 @@ PRODUCT_PACKAGES += \
 
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# EROFS utils
+PRODUCT_PACKAGES += \
+    mkfs.erofs.recovery \
+    dump.erofs.recovery \
+    fsck.erofs.recovery
 
 # fastbootd
 PRODUCT_PACKAGES += \

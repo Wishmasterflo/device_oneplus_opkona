@@ -1,9 +1,13 @@
 ## OrangeFox Recovery Project Oneplus 8T/9R Changelog
 
+# 05-Oct-2022 OrangeFox R12.1 V11
+ - Synced with latest fox_12.1 changes
+ - Fixed that storage was not detected from Computer on the EROFS Version
+ - Updated the Magisk addon to Magisk 25.2
+
 # 02-Oct-2022 OrangeFox R12.1 V10
  - Synced with latest fox_12.1 changes
  - Build a seperate Orangefox Version for ROMs with EROFS Filesystem
-
 
 # 25-Sep-2022 OrangeFox R12.1 V9
  - Synced with latest fox_12.1 changes

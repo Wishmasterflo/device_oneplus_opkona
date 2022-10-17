@@ -1,5 +1,9 @@
 ## OrangeFox Recovery Project Oneplus 8T/9R Changelog
 
+# 17-Oct-2022 OrangeFox R12.1 V12 beta
+- Updated to OOS13 OB1 Kernel 
+- Synced with latest fox_12.1 changes
+
 # 05-Oct-2022 OrangeFox R12.1 V11
  - Synced with latest fox_12.1 changes
  - Fixed that storage was not detected from Computer on the EROFS Version

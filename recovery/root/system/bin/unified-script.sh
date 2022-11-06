@@ -105,10 +105,10 @@ case $project in
     20828)
         load_op9r
         ;;
-	12)
-	    load_op8
-		;;
-	19811)
+    19821)
+	load_op8
+	;;
+    19811)
         load_op8pro
         ;;		
     *)

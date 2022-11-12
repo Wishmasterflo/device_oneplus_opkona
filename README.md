@@ -1,5 +1,15 @@
 ## OrangeFox Recovery Project Oneplus 8T/9R Changelog
 
+# 12-Nov-2022 OrangeFox R12.1 V13
+ - Synced with latest fox_12.1 changes
+ - Added Support for Oneplus 8 and Oneplus 8 Pro (data decryption only working when using a FBEv2 ROM!)
+ - Some adjustments to the EROFS Version of Orangefox
+ - Adjusted the length of the Orangefox Filename to better see them on mobile devices
+ - disabled the reflash function in Orangefox
+ - disabled the splash screen changing
+ - Changed splash screen background color to black
+ - Exclude /data/fonts from Backup to avoid errors during Backup
+
 # 18-Oct-2022 OrangeFox R12.1 V12
  - Synced with latest fox_12.1 changes
  - Updated Version with OOS13 OB1 Kernel

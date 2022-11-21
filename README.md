@@ -1,6 +1,6 @@
 ## OrangeFox Recovery Project Oneplus 8 series & 9R Changelog
 
-# 21-Nov-2022 OrangeFox R12.1 V134
+# 21-Nov-2022 OrangeFox R12.1 V14
  - Adjusted unified script for OP8 and 8Pro
  - Updated Version with OOS12 c36 Kernel
  - Updated Version with OOS13 F13 Kernel

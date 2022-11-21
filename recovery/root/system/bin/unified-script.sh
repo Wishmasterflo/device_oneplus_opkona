@@ -64,14 +64,16 @@ load_op8pro()
     resetprop "ro.product.product.model" "OnePlus 8Pro"
     resetprop "ro.product.product.name" "OnePlus8Pro_IND"
     resetprop "ro.product.system.device" "OnePlus8Pro"
-    resetprop "ro.product.system.model" "OnePlus 8Pro"
-    resetprop "ro.product.system.name" "OnePlus8Pro_IND"
     resetprop "ro.product.system_ext.device" "OnePlus8Pro"
     resetprop "ro.product.system_ext.model" "OnePlus 8Pro"
     resetprop "ro.product.system_ext.name" "OnePlus8Pro_IND"
     resetprop "ro.product.vendor.device" "OnePlus8Pro"
     resetprop "ro.product.vendor.model" "OnePlus 8Pro"
     resetprop "ro.product.vendor.name" "OnePlus8Pro_IND"
+	resetprop "ro.product.system.brand" "OnePlus"
+    resetprop "ro.product.system.manufacturer" "OnePlus"
+    resetprop "ro.product.system.model" "IN2025"
+    resetprop "ro.product.system.name" "OnePlus8Pro"
 }
 
 load_op9r()
@@ -105,10 +107,10 @@ case $project in
     20828)
         load_op9r
         ;;
-	19821)
-	    load_op8
-		;;
-	19811)
+    19821)
+	load_op8
+	;;
+    19811)
         load_op8pro
         ;;		
     *)

@@ -70,7 +70,7 @@ load_op8pro()
     resetprop "ro.product.vendor.device" "OnePlus8Pro"
     resetprop "ro.product.vendor.model" "OnePlus 8Pro"
     resetprop "ro.product.vendor.name" "OnePlus8Pro_IND"
-	resetprop "ro.product.system.brand" "OnePlus"
+    resetprop "ro.product.system.brand" "OnePlus"
     resetprop "ro.product.system.manufacturer" "OnePlus"
     resetprop "ro.product.system.model" "IN2025"
     resetprop "ro.product.system.name" "OnePlus8Pro"

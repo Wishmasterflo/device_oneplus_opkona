@@ -16,14 +16,16 @@ load_op8()
     resetprop "ro.product.product.model" "OnePlus 8"
     resetprop "ro.product.product.name" "OnePlus8"
     resetprop "ro.product.system.device" "OnePlus8"
-    resetprop "ro.product.system.model" "OnePlus 8"
-    resetprop "ro.product.system.name" "OnePlus8"
     resetprop "ro.product.system_ext.device" "OnePlus8"
     resetprop "ro.product.system_ext.model" "OnePlus 8"
     resetprop "ro.product.system_ext.name" "OnePlus8"
     resetprop "ro.product.vendor.device" "OnePlus8"
     resetprop "ro.product.vendor.model" "OnePlus 8"
     resetprop "ro.product.vendor.name" "OnePlus8"
+    resetprop "ro.product.system.brand" "OnePlus"
+    resetprop "ro.product.system.manufacturer" "OnePlus"
+    resetprop "ro.product.system.model" "IN2013"
+    resetprop "ro.product.system.name" "OnePlus8"
 }
 
 load_op8t()
@@ -39,15 +41,16 @@ load_op8t()
     resetprop "ro.product.product.device" "OnePlus8T"
     resetprop "ro.product.product.model" "OnePlus 8T"
     resetprop "ro.product.product.name" "OnePlus8T"
-    resetprop "ro.product.system.device" "OnePlus8T"
-    resetprop "ro.product.system.model" "OnePlus 8T"
-    resetprop "ro.product.system.name" "OnePlus8T"
     resetprop "ro.product.system_ext.device" "OnePlus8T"
     resetprop "ro.product.system_ext.model" "OnePlus 8T"
     resetprop "ro.product.system_ext.name" "OnePlus8T"
     resetprop "ro.product.vendor.device" "OnePlus8T"
     resetprop "ro.product.vendor.model" "OnePlus 8T"
     resetprop "ro.product.vendor.name" "OnePlus8T"
+	resetprop "ro.product.system.brand" "OnePlus"
+    resetprop "ro.product.system.manufacturer" "OnePlus"
+    resetprop "ro.product.system.model" "KB2003"
+    resetprop "ro.product.system.name" "OnePlus8T"
 }
 
 load_op8pro()
@@ -70,7 +73,7 @@ load_op8pro()
     resetprop "ro.product.vendor.device" "OnePlus8Pro"
     resetprop "ro.product.vendor.model" "OnePlus 8Pro"
     resetprop "ro.product.vendor.name" "OnePlus8Pro_IND"
-    resetprop "ro.product.system.brand" "OnePlus"
+	resetprop "ro.product.system.brand" "OnePlus"
     resetprop "ro.product.system.manufacturer" "OnePlus"
     resetprop "ro.product.system.model" "IN2025"
     resetprop "ro.product.system.name" "OnePlus8Pro"
@@ -90,14 +93,16 @@ load_op9r()
     resetprop "ro.product.product.model" "OnePlus 9R"
     resetprop "ro.product.product.name" "OnePlus9R_IND"
     resetprop "ro.product.system.device" "OnePlus9R"
-    resetprop "ro.product.system.model" "OnePlus 9R"
-    resetprop "ro.product.system.name" "OnePlus9R_IND"
     resetprop "ro.product.system_ext.device" "OnePlus9R"
     resetprop "ro.product.system_ext.model" "OnePlus 9R"
     resetprop "ro.product.system_ext.name" "OnePlus9R_IND"
     resetprop "ro.product.vendor.device" "OnePlus9R"
     resetprop "ro.product.vendor.model" "OnePlus 9R"
     resetprop "ro.product.vendor.name" "OnePlus9R_IND"
+	resetprop "ro.product.system.brand" "OnePlus"
+    resetprop "ro.product.system.manufacturer" "OnePlus"
+    resetprop "ro.product.system.model" "LE2101"
+    resetprop "ro.product.system.name" "OnePlus9R"
 }
 
 project=$(getprop ro.boot.prj_version)

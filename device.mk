@@ -8,7 +8,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit from virtual AB OTA config
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
-LOCAL_PATH := device/oneplus/OnePlus8T
+LOCAL_PATH := device/oneplus/opkona
 
 #SHIPPING API
 PRODUCT_SHIPPING_API_LEVEL := 30

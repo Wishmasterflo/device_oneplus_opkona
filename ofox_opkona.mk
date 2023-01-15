@@ -14,6 +14,18 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ofox_opkona.mk
+# Release name
+PRODUCT_RELEASE_NAME := opkona
 
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/twrp/config/common.mk)
+
+## Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
+PRODUCT_NAME := ofox_$(PRODUCT_DEVICE)
+PRODUCT_BRAND := oneplus
+PRODUCT_MODEL := KB2003
+PRODUCT_MANUFACTURER := oneplus
+
+# Inherit from hardware-specific part of the product configuration
+$(call inherit-product, device/$(PRODUCT_BRAND)/$(PRODUCT_DEVICE)/device.mk)

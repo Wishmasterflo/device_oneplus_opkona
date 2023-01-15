@@ -3,6 +3,7 @@
 # 15-Jan-2023 OrangeFox R12.1 V14 beta
  - Updated Version with OOS13 F19 OP9R Kernel
  - Synced with latest fox_12.1 changes
+ - Fixed props settings for the different Kona devices
 
 # 21-Nov-2022 OrangeFox R12.1 V14 beta
  - Adjusted unified script for OP8 and 8Pro

@@ -15,5 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_OnePlus8T.mk
+    $(LOCAL_DIR)/ofox_opkona.mk
 

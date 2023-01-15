@@ -110,17 +110,17 @@ echo "Running unified/variant script with $project..." >> /tmp/recovery.log
 
 case $project in
     20828)
-        load_op9r
-        ;;
+     load_op9r
+     ;;
     19821)
-	load_op8
-	;;
+	 load_op8
+	 ;;
     19811)
-        load_op8pro
-        ;;		
+     load_op8pro
+     ;;	
     *)
-        load_op8t
-        ;;
+     load_op8t
+     ;;
 esac
 
 exit 0

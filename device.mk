@@ -122,7 +122,7 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
 PRODUCT_PACKAGES_ENG += \
     tzdata_twrp
 
-#TWRP
+# ofox
 PRODUCT_COPY_FILES += \
-    device/oneplus/OnePlus8T/prebuilt/systemmanifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/system/manifest.xml \
-    device/oneplus/OnePlus8T/prebuilt/vendormanifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/manifest.xml \
+    device/oneplus/opkona/prebuilt/systemmanifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/system/manifest.xml \
+    device/oneplus/opkona/prebuilt/vendormanifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/manifest.xml \

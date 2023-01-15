@@ -25,7 +25,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),kebab)
+ifeq ($(TARGET_DEVICE),opkona)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 

@@ -126,3 +126,4 @@ PRODUCT_PACKAGES_ENG += \
 PRODUCT_COPY_FILES += \
     device/oneplus/opkona/prebuilt/systemmanifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/system/manifest.xml \
     device/oneplus/opkona/prebuilt/vendormanifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/manifest.xml \
+	

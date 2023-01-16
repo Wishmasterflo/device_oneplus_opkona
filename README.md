@@ -1,5 +1,9 @@
 ## OrangeFox Recovery Project Oneplus 8 series & 9R Changelog
 
+# 16-Jan-2023 OrangeFox R12.1 V14 beta
+ - Fixed file formatting from Windows to Linux which was causing file issues in the device tree
+ - Changed to Meteoric V9.5 Kernel
+
 # 15-Jan-2023 OrangeFox R12.1 V14 beta
  - Updated Version with OOS13 F19 OP9R Kernel
  - Synced with latest fox_12.1 changes

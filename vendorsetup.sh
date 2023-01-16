@@ -1,7 +1,6 @@
 export TARGET_ARCH="arm64-v8a"
 
 # Some about us
-#export FOX_VARIANT="A12"
 export FOX_VERSION="R12.1"
 export OF_MAINTAINER=Wishmasterflo
 
@@ -9,7 +8,6 @@ export OF_MAINTAINER=Wishmasterflo
 export FOX_BUILD_DEVICE="OnePlus8T"
 export ALLOW_MISSING_DEPENDENCIES=true
 export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
-export LC_ALL="C"
 export TARGET_DEVICE_ALT="kebab, Kebab, instantnoodle, instantnoodlep, lemonades, lemonkebab, OnePlus8, OnePlus 8, OnePlus8T, OnePlus 8T, OnePlus 8 Pro"
 export OF_TARGET_DEVICES="kebab, Kebab, instantnoodle, instantnoodlep, lemonades, lemonkebab, OnePlus8, OnePlus 8, OnePlus8T, OnePlus 8T, OnePlus 8 Pro"
 
@@ -25,9 +23,6 @@ export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=1
 export OF_NO_REFLASH_CURRENT_ORANGEFOX=1
 
 # Screen specifications
-#export OF_SCREEN_H=1920
-#export OF_SCREEN_W=1080
-#export OF_STATUS_H=100
 export OF_STATUS_INDENT_LEFT=48
 export OF_STATUS_INDENT_RIGHT=48
 export OF_ALLOW_DISABLE_NAVBAR=0
@@ -59,9 +54,6 @@ export FOX_BUGGED_AOSP_ARB_WORKAROUND="1601559499"
 
 # -- add settings for R12.1 --
 export OF_QUICK_BACKUP_LIST="/boot;/data;/super;"
-
-# -- add settings for Android 12 --
-# export OF_FIX_DECRYPTION_ON_DATA_MEDIA=1
 
 # Add some extras
 export FOX_USE_ZIP_BINARY=1

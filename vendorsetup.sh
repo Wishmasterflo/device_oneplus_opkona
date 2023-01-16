@@ -9,6 +9,7 @@ export OF_MAINTAINER=Wishmasterflo
 export FOX_BUILD_DEVICE="OnePlus8T"
 export ALLOW_MISSING_DEPENDENCIES=true
 export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
+export TW_DEFAULT_LANGUAGE="en"
 export LC_ALL="C"
 export TARGET_DEVICE_ALT="kebab, Kebab, instantnoodle, instantnoodlep, lemonades, lemonkebab, OnePlus8, OnePlus 8, OnePlus8T, OnePlus 8T, OnePlus 8 Pro"
 export OF_TARGET_DEVICES="kebab, Kebab, instantnoodle, instantnoodlep, lemonades, lemonkebab, OnePlus8, OnePlus 8, OnePlus8T, OnePlus 8T, OnePlus 8 Pro"
@@ -25,9 +26,6 @@ export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=1
 export OF_NO_REFLASH_CURRENT_ORANGEFOX=1
 
 # Screen specifications
-#export OF_SCREEN_H=1920
-#export OF_SCREEN_W=1080
-#export OF_STATUS_H=100
 export OF_STATUS_INDENT_LEFT=48
 export OF_STATUS_INDENT_RIGHT=48
 export OF_ALLOW_DISABLE_NAVBAR=0
@@ -72,4 +70,12 @@ export FOX_USE_BASH_SHELL=1
 export FOX_USE_LZMA_COMPRESSION=1
 export FOX_USE_NANO_EDITOR=1
 export OF_DONT_KEEP_LOG_HISTORY=1
-export OF_NO_SPLASH_CHANGE=1
+export OF_NO_SPLASH_CHANGE=1'
+
+# let's see what are our build VARs
+	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
+  	   export | grep "FOX" >> $FOX_BUILD_LOG_FILE
+  	   export | grep "OF_" >> $FOX_BUILD_LOG_FILE
+   	   export | grep "TARGET_" >> $FOX_BUILD_LOG_FILE
+  	   export | grep "TW_" >> $FOX_BUILD_LOG_FILE
+ 	fi

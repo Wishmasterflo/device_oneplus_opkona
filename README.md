@@ -2,7 +2,7 @@
 
 # 16-Jan-2023 OrangeFox R12.1 V14 beta
  - Fixed file formatting from Windows to Linux which was causing file issues in the device tree
- - Changed to Meteoric V9.5 Kernel
+ - Added a Magisk flashable Module for Orangefox (thanks to MeHigh.G)
 
 # 15-Jan-2023 OrangeFox R12.1 V14 beta
  - Updated Version with OOS13 F19 OP9R Kernel

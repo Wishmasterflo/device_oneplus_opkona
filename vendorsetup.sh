@@ -55,12 +55,4 @@ export FOX_USE_BASH_SHELL=1
 export FOX_USE_LZMA_COMPRESSION=1
 export FOX_USE_NANO_EDITOR=1
 export OF_DONT_KEEP_LOG_HISTORY=1
-export OF_NO_SPLASH_CHANGE=1
-
-	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
-  	   export | grep "FOX" >> $FOX_BUILD_LOG_FILE
-  	   export | grep "OF_" >> $FOX_BUILD_LOG_FILE
-   	   export | grep "TARGET_" >> $FOX_BUILD_LOG_FILE
-  	   export | grep "TW_" >> $FOX_BUILD_LOG_FILE
- 	fi
-	
+export OF_NO_SPLASH_CHANGE=1	

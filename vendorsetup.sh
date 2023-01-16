@@ -3,7 +3,6 @@ export TARGET_ARCH="arm64-v8a"
 export FOX_VERSION="R12.1"
 export OF_MAINTAINER=Wishmasterflo
 
-export LC_ALL="C"
 export TW_DEFAULT_LANGUAGE="en"
 export FOX_BUILD_DEVICE="OnePlus8T"
 export ALLOW_MISSING_DEPENDENCIES=true

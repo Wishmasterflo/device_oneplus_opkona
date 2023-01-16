@@ -1,0 +1,10 @@
+ro.display.series=OnePlus 8T
+ro.product.board=kona
+ro.board.platform=kona
+vendor.gatekeeper.disable_spu=true
+ro.adb.secure=0
+fbe.metadata.wrappedkey=true
+ro.crypto.volume.filenames_mode=aes-256-cts
+ro.vendor.qti.va_aosp.support=1
+ro.product.first_api_level=30
+ro.virtual_ab.enabled=true

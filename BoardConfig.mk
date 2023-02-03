@@ -55,34 +55,38 @@ TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
 # Kernel
+BOARD_BOOT_HEADER_VERSION := 2
+BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := \
-    androidboot.console=ttyMSM0 \
     androidboot.hardware=qcom \
+    androidboot.console=ttyMSM0 \
     androidboot.memcg=1 \
     androidboot.selinux=permissive \
-	firmware_class.path=/vendor/firmware_mnt/image \
-    androidboot.usbcontroller=a600000.dwc3 \
     lpm_levels.sleep_disabled=1 \
     msm_rtb.filter=0x237 \
     service_locator.enable=1 \
+    androidboot.usbcontroller=a600000.dwc3 \
     swiotlb=2048 \
-    video=vfb:640x400,bpp=32,memsize=3072000
-
+    loop.max_part=7 \
+    cgroup.memory=nokmem,nosocket \
+    reboot=panic_warm 
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
-BOARD_BOOT_HEADER_VERSION := 2
 BOARD_KERNEL_BASE          := 0x00000000
 BOARD_KERNEL_TAGS_OFFSET   := 0x00000100
 BOARD_KERNEL_OFFSET        := 0x00008000
 BOARD_KERNEL_SECOND_OFFSET := 0x00f00000
 BOARD_RAMDISK_OFFSET       := 0x01000000
 BOARD_DTB_OFFSET           := 0x01f00000
-TARGET_KERNEL_ARCH := arm64
-TARGET_NO_KERNEL := false
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 BOARD_INCLUDE_RECOVERY_DTBO := true
+NEED_KERNEL_MODULE_SYSTEM := true
+TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc OEM_TARGET_PRODUCT=$(PRODUCT_DEVICE)
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_SOURCE := kernel/oneplus/sm8250
+TARGET_KERNEL_CONFIG := vendor/kona-perf_defconfig
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 BOARD_MKBOOTIMG_ARGS += --base $(BOARD_KERNEL_BASE)
 BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE)
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)

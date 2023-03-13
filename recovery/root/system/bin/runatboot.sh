@@ -110,13 +110,25 @@ case $project in
     20828)
      load_op9r
      ;;
+    20838)
+     load_op9r
+     ;;
     19821)
-	 load_op8
-	 ;;
+     load_op8
+     ;;
+    19855)
+     load_op8
+     ;;
+    19867)
+     load_op8
+     ;;
     19811)
      load_op8pro
      ;;
-    *)
+    19805)
+     load_op8t
+     ;;
+    20809)
      load_op8t
      ;;
 esac

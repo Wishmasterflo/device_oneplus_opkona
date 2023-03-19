@@ -1,6 +1,6 @@
 ## OrangeFox Recovery Project Oneplus 8 series & 9R Changelog
 
-# 03-Feb-2023 OrangeFox R12.1 V15 
+# 02-Feb-2023 OrangeFox R12.1 V15 
  - Switched to Meteoric Kernel on OOS13 Version
  - Fixed USB file Transfer on OOS13 Version
 

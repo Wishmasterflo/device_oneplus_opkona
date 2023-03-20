@@ -1,5 +1,12 @@
 ## OrangeFox Recovery Project Oneplus 8 series & 9R Changelog
 
+# 20-Mar-2023 OrangeFox R12.1 V16
+ - OOS13 Based (should work with both ext4 and EROFS ROMs)
+ - Fixed device detection for Oneplus9R
+ - Misc changes and adjustments
+ - Updated with latest Orangefox source changes
+ - Updated with latest Meteoric Kernel
+
 # 02-Feb-2023 OrangeFox R12.1 V15 
  - Switched to Meteoric Kernel on OOS13 Version
  - Fixed USB file Transfer on OOS13 Version

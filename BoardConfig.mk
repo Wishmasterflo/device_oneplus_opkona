@@ -70,7 +70,6 @@ BOARD_KERNEL_CMDLINE := \
     loop.max_part=7 \
     cgroup.memory=nokmem,nosocket \
     reboot=panic_warm 
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_BASE          := 0x00000000

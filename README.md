@@ -1,21 +1,29 @@
 ## OrangeFox Recovery Project Oneplus 8 series & 9R Changelog
 
-# 20-Mar-2023 OrangeFox R12.1 V16
+# 01-Apr-2023 R12.1 V17 
+ - Changed Fastboot v1.0 to v1.1
+ - Fixed permission issues when creating files in Orangefox
+ 
+# 20-Mar-2023 R12.1 V16 
  - OOS13 Based (should work with both ext4 and EROFS ROMs)
  - Fixed device detection for Oneplus9R
  - Misc changes and adjustments
  - Updated with latest Orangefox source changes
  - Updated with latest Meteoric Kernel
 
-# 02-Feb-2023 OrangeFox R12.1 V15 
- - Switched to Meteoric Kernel on OOS13 Version
- - Fixed USB file Transfer on OOS13 Version
+# 02-Feb-2023 R12.1 V15 
+ - Updated my build system which seems to have fixed some bugs in Orangefox now
+   (old log zip file cleaning, disable reflash current Orangefox, etc) all that should work now
+ - Synced with latest fox_12.1 changes
+ - Removed flag for TW_USE_FSCRYPT_POLICY as Orangefox should detect that automatically now
+ - Switched to Meteoric Kernel (for OOS13 based Orangefox)
+ - Fixed USB file Transfer
 
-# 16-Jan-2023 OrangeFox R12.1 V14
+# 16-Jan-2023 R12.1 V14
  - Fixed file formatting from Windows to Linux which was causing file issues in the device tree
  - Added a Magisk flashable Module for Orangefox (thanks to MeHigh.G)
 
-# 15-Jan-2023 OrangeFox R12.1 V14 beta
+# 15-Jan-2023 R12.1 V14 beta 
  - Updated Version with OOS13 F19 OP9R Kernel
  - Synced with latest fox_12.1 changes
  - Fixed props settings for the different Kona devices

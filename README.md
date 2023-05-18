@@ -1,5 +1,8 @@
 ## OrangeFox Recovery Project Oneplus 8 series & 9R Changelog
 
+# 19-May-2023 R12.1 V18 
+ - Updated with latest Orangefox source changes
+
 # 01-Apr-2023 R12.1 V17 
  - Changed Fastboot v1.0 to v1.1
  - Fixed permission issues when creating files in Orangefox

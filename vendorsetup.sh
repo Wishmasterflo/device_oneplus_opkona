@@ -26,6 +26,8 @@ export OF_STATUS_INDENT_LEFT=48
 export OF_STATUS_INDENT_RIGHT=48
 export OF_ALLOW_DISABLE_NAVBAR=0
 export OF_CLOCK_POS=0
+export OF_SCREEN_H=2400
+export OF_STATUS_H=120
 
 # Device stuff
 export OF_KEEP_FORCED_ENCRYPTION=1
@@ -46,7 +48,7 @@ export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
 # For some reason this is dumb and necessary
 export FOX_BUGGED_AOSP_ARB_WORKAROUND="1601559499"
 
-# -- add settings for R12.1 --
+# Qick Backup list
 export OF_QUICK_BACKUP_LIST="/boot;/data;/super;"
 
 # Add some extras

@@ -1,5 +1,10 @@
 ## OrangeFox Recovery Project Oneplus 8 series & 9R Changelog
 
+# 19-Sep-2023 R12.1 V23
+ - Adjusted screen resolution settings
+ - Updated with latest Meteoric OOS13.1 based Kernel
+ - Updated with latest Orangefox source changes
+
 # 09-Sep-2023 R12.1 V22
  - Updated with latest Orangefox source changes
 

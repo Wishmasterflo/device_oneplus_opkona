@@ -51,6 +51,9 @@ export FOX_BUGGED_AOSP_ARB_WORKAROUND="1601559499"
 # Qick Backup list
 export OF_QUICK_BACKUP_LIST="/boot;/data;/super;"
 
+# Magisk 26.3
+export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-v26.3.zip
+
 # Add some extras
 export FOX_USE_ZIP_BINARY=1
 export FOX_USE_TAR_BINARY=1

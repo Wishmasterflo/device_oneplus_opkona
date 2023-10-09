@@ -48,11 +48,11 @@ export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
 # For some reason this is dumb and necessary
 export FOX_BUGGED_AOSP_ARB_WORKAROUND="1601559499"
 
-# Qick Backup list
+# Quick Backup list
 export OF_QUICK_BACKUP_LIST="/boot;/data;/super;"
 
 # Magisk 26.3
-export FOX_USE_SPECIFIC_MAGISK_ZIP=$(DEVICE_PATH)/Magisk/Magisk-v26.3.zip
+export FOX_USE_SPECIFIC_MAGISK_ZIP=device/oneplus/opkona/Magisk/Magisk-v26.3.zip
 
 # Add some extras
 export FOX_USE_ZIP_BINARY=1

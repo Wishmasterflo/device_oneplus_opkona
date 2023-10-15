@@ -4,6 +4,10 @@
 ## OrangeFox Recovery Project Oneplus 8 series & 9R 
 ## Changelog
 
+# 15-Oct-2023 R12.1 V25
+ - Synced with latest Orangefox source changes
+ - Added Data decryption for Android 14
+
 # 11-Oct-2023 R12.1 V24
  - Synced with latest Orangefox source changes
  - Updated Magisk addon to Magisk 26.3

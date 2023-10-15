@@ -1,4 +1,8 @@
-## OrangeFox Recovery Project Oneplus 8 series & 9R Changelog
+<img src="https://github.com/Sanju0910/Sanju0910/blob/main/images/of_logo.png" width=100 height=100 align="left" />  
+<img src="https://github.com/Sanju0910/Sanju0910/blob/main/images/oneplus_logo.png" align="right"/>
+
+## OrangeFox Recovery Project Oneplus 8 series & 9R 
+## Changelog
 
 # 02-Feb-2023 OrangeFox R12.1 V15
  - Switched to Meteoric Kernel on OOS13 Version

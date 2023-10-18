@@ -51,6 +51,9 @@ export FOX_BUGGED_AOSP_ARB_WORKAROUND="1601559499"
 # Quick Backup list
 export OF_QUICK_BACKUP_LIST="/boot;/data;/super;"
 
+# Set default Keymaster Version
+export OF_DEFAULT_KEYMASTER_VERSION=4.1
+
 # Magisk 26.3
 export FOX_USE_SPECIFIC_MAGISK_ZIP=device/oneplus/opkona/Magisk/Magisk-v26.3.zip
 

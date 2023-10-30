@@ -106,6 +106,7 @@ load_op9r()
 project=$(getprop ro.boot.prj_version)
 project11=$(getprop ro.boot.project_name)
 echo "Setting device props for device with $project..." >> /tmp/recovery.log
+echo $project11
 
 case $project in
     20828)

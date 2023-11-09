@@ -57,7 +57,7 @@ export OF_QUICK_BACKUP_LIST="/boot;/data;/super;"
 export OF_DEFAULT_KEYMASTER_VERSION=4.1
 
 # Magisk 26.3
-export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-v26.3.zip
+export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-v26.4.zip
 
 # Dont install AROMAFM
 export FOX_DELETE_AROMAFM=1

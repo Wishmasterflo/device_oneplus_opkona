@@ -178,6 +178,7 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.
 TW_THEME := portrait_hdpi
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_DEFAULT_BRIGHTNESS := 420
+TW_MAX_BRIGHTNESS := 550
 TW_Y_OFFSET := 104
 TW_H_OFFSET := -104
 TW_EXCLUDE_DEFAULT_USB_INIT := true

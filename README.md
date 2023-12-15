@@ -4,6 +4,10 @@
 ## OrangeFox Recovery Project Oneplus 8 series & 9R 
 ## Changelog
 
+# 15-Dec-2023 R12.1 V27
+  - Synced with latest Orangefox source changes
+  - Upated Magisk addon to Magisk 26.4
+
 # 03-Nov-2023 R12.1 V26
   - Synced with latest Orangefox source changes
   - setting device props when booting from OOS11 base

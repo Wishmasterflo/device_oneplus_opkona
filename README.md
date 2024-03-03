@@ -4,6 +4,12 @@
 ## OrangeFox Recovery Project Oneplus 8 series & 9R 
 ## Changelog
 
+# 03-Mar-2024 R12.1 V29
+  -  Synced with latest Orangefox source changes
+  -  Orangefox will reflash itself if a ROM is flashed from within a already flashed Orangefox V28 or later Version on the phone!
+  -  Reverted back Kernel settings which caused issues on Orangefox V28
+  -  Updated Magisk addon to Magisk v27.0
+  
 # 02-Feb-2024 R12.1 V28
   - Synced with latest Orangefox source changes
   - Now Orangefox will reflash itself if a ROM is flashed from within a already

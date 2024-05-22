@@ -4,6 +4,9 @@
 ## OrangeFox Recovery Project Oneplus 8 series & 9R 
 ## Changelog
 
+# 22-May-2024 R12.1 V30
+  -  Synced with latest Orangefox source changes
+
 # 03-Mar-2024 R12.1 V29
   -  Synced with latest Orangefox source changes
   -  Orangefox will reflash itself if a ROM is flashed from within a already flashed Orangefox V28 or later Version on the phone!

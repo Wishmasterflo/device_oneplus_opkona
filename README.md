@@ -4,6 +4,9 @@
 ## OrangeFox Recovery Project Oneplus 8 series & 9R 
 ## Changelog
 
+# 29-Sep-2024 R12.1 V31
+  -  Synced with latest Orangefox source changes
+
 # 22-May-2024 R12.1 V30
   -  Synced with latest Orangefox source changes
 

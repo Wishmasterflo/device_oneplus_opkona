@@ -49,9 +49,6 @@ export OF_QUICK_BACKUP_LIST="/boot;/data;/super;"
 # Set default Keymaster Version
 export OF_DEFAULT_KEYMASTER_VERSION=4.1
 
-# Magisk
-export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-v28.1.zip
-
 # Dont install AROMAFM
 export FOX_DELETE_AROMAFM=1
 

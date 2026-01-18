@@ -4,6 +4,10 @@
 ## OrangeFox Recovery Project Oneplus 8 series & 9R 
 ## Changelog
 
+# 18-Jan-2026 R11.3 V33
+  -  Synced with latest Orangefox R11.3 release changes
+  -  Updated Magisk and KSU next to latest Versions
+
 # 19-Feb-2025 R12.1 V32
   -  Synced with latest Orangefox source changes
 
@@ -171,3 +175,4 @@
 - TWRP team
 - OrangeFox team
 - Qnorsten for OOS fix
+

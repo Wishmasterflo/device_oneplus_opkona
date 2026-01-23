@@ -6,6 +6,7 @@
 
 # 18-Jan-2026 R11.3 V33
   -  Synced with latest Orangefox R11.3 release changes
+  -  Should work on all Android 13 - Android 16 custom ROMs
   -  Updated Magisk to latest Version
 
 # 19-Feb-2025 R12.1 V32
@@ -175,4 +176,5 @@
 - TWRP team
 - OrangeFox team
 - Qnorsten for OOS fix
+
 

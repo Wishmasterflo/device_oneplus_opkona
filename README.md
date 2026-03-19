@@ -1,3 +1,35 @@
+
+<div align="right">
+  <details>
+    <summary >🌐 Language</summary>
+    <div>
+      <div align="center">
+        <a href="https://openaitx.github.io/view.html?user=Wishmasterflo&project=device_oneplus_opkona&lang=en">English</a>
+        | <a href="https://openaitx.github.io/view.html?user=Wishmasterflo&project=device_oneplus_opkona&lang=zh-CN">简体中文</a>
+        | <a href="https://openaitx.github.io/view.html?user=Wishmasterflo&project=device_oneplus_opkona&lang=zh-TW">繁體中文</a>
+        | <a href="https://openaitx.github.io/view.html?user=Wishmasterflo&project=device_oneplus_opkona&lang=ja">日本語</a>
+        | <a href="https://openaitx.github.io/view.html?user=Wishmasterflo&project=device_oneplus_opkona&lang=ko">한국어</a>
+        | <a href="https://openaitx.github.io/view.html?user=Wishmasterflo&project=device_oneplus_opkona&lang=hi">हिन्दी</a>
+        | <a href="https://openaitx.github.io/view.html?user=Wishmasterflo&project=device_oneplus_opkona&lang=th">ไทย</a>
+        | <a href="https://openaitx.github.io/view.html?user=Wishmasterflo&project=device_oneplus_opkona&lang=fr">Français</a>
+        | <a href="https://openaitx.github.io/view.html?user=Wishmasterflo&project=device_oneplus_opkona&lang=de">Deutsch</a>
+        | <a href="https://openaitx.github.io/view.html?user=Wishmasterflo&project=device_oneplus_opkona&lang=es">Español</a>
+        | <a href="https://openaitx.github.io/view.html?user=Wishmasterflo&project=device_oneplus_opkona&lang=it">Italiano</a>
+        | <a href="https://openaitx.github.io/view.html?user=Wishmasterflo&project=device_oneplus_opkona&lang=ru">Русский</a>
+        | <a href="https://openaitx.github.io/view.html?user=Wishmasterflo&project=device_oneplus_opkona&lang=pt">Português</a>
+        | <a href="https://openaitx.github.io/view.html?user=Wishmasterflo&project=device_oneplus_opkona&lang=nl">Nederlands</a>
+        | <a href="https://openaitx.github.io/view.html?user=Wishmasterflo&project=device_oneplus_opkona&lang=pl">Polski</a>
+        | <a href="https://openaitx.github.io/view.html?user=Wishmasterflo&project=device_oneplus_opkona&lang=ar">العربية</a>
+        | <a href="https://openaitx.github.io/view.html?user=Wishmasterflo&project=device_oneplus_opkona&lang=fa">فارسی</a>
+        | <a href="https://openaitx.github.io/view.html?user=Wishmasterflo&project=device_oneplus_opkona&lang=tr">Türkçe</a>
+        | <a href="https://openaitx.github.io/view.html?user=Wishmasterflo&project=device_oneplus_opkona&lang=vi">Tiếng Việt</a>
+        | <a href="https://openaitx.github.io/view.html?user=Wishmasterflo&project=device_oneplus_opkona&lang=id">Bahasa Indonesia</a>
+        | <a href="https://openaitx.github.io/view.html?user=Wishmasterflo&project=device_oneplus_opkona&lang=as">অসমীয়া</
+      </div>
+    </div>
+  </details>
+</div>
+
 <img src="https://github.com/Sanju0910/Sanju0910/blob/main/images/of_logo.png" width=100 height=100 align="left" />  
 <img src="https://github.com/Sanju0910/Sanju0910/blob/main/images/oneplus_logo.png" align="right"/>
 
